@@ -1,0 +1,5 @@
+aula1 > aula1_1 : Comentários de código em Python
+aula2 > aula2 : O comando print
+aula3 > aula3 : Strings (texto) e aspas em Python
+aula7 > aula7 : Introdução à formatação de Strings
+desafio-aula-21 : desafio
