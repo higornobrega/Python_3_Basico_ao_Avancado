@@ -17,3 +17,21 @@ perguntas = [
         'Resposta': '5',
     },
 ]
+cont = 0
+respostas = []
+for pergunta in perguntas:
+    print(pergunta['Pergunta'])
+    print(pergunta['Opções'])
+    r = input('Escreva a opção certa: ')
+    respostas.append(r)
+
+if respostas[0] == '4':
+    cont = cont + 1
+
+if respostas[1] == '25':
+    cont = cont + 1
+
+if respostas[2] == '5':
+    cont = cont + 1
+
+print(f'Sua pontuação é {cont}')
