@@ -21,17 +21,11 @@ cont = 0
 respostas = []
 for pergunta in perguntas:
     print(pergunta['Pergunta'])
-    print(pergunta['Opções'])
+    for i, opcao in enumerate(pergunta['Opções']):
+        print(f'{i}) - {opcao}:')
     r = input('Escreva a opção certa: ')
-    respostas.append(r)
 
-if respostas[0] == '4':
-    cont = cont + 1
-
-if respostas[1] == '25':
-    cont = cont + 1
-
-if respostas[2] == '5':
-    cont = cont + 1
-
-print(f'Sua pontuação é {cont}')
+    if r == pergunta['Resposta']:
+        print('Acertou Miserave')
+    else:
+        print('EEERRRRRRRROOOOOOOOOOOUUUUUUUUU')
